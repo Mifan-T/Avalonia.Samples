@@ -1,272 +1,264 @@
-= Avalonia image:_docs/_Assets/Logo.svg[link=https://www.avaloniaui.net] Samples 
-:toc:
-:toc-placement!:
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
+# 由deepseek AI翻译，自用
+## Translated by deepseek AI
 
-Welcome to **Avalonia.Samples**. This is a collection of minimal samples, which should make it easy for everyone to get started with https://www.avaloniaui.net[Avalonia^]. Each sample is focusing on only one aspect of Avalonia.
+= Avalonia image:_docs/_Assets/Logo.svg[link=https://www.avaloniaui.net] 示例项目  
+:toc:  
+:toc-placement!:  
+:tip-caption: :bulb:  
+:note-caption: :information_source:  
+:important-caption: :heavy_exclamation_mark:  
+:caution-caption: :fire:  
+:warning-caption: :warning:  
 
-toc::[]
+欢迎来到 **Avalonia.Samples**。这是一个最小化的示例集合，旨在帮助开发者轻松入门 https://www.avaloniaui.net[Avalonia^]。每个示例专注于 Avalonia 的某一特定功能。  
 
-[#get-in-touch]
-== 🗯 Get in touch with us
+toc::[]  
 
-If you have feedback, questions or suggestions feel free to contact us via:
+[#get-in-touch]  
+== 🗯 联系我们  
 
-image:https://raw.githubusercontent.com/Patrolavia/telegram-badge/master/chat.svg[link=https://t.me/Avalonia]
-image:https://badges.gitter.im/Join%20Chat.svg[link=https://gitter.im/AvaloniaUI/Avalonia?utm_campaign=pr-badge&utm_content=badge&utm_medium=badge&utm_source=badge]
-image:https://img.shields.io/badge/discord-join%20chat-46BC99[link=https://aka.ms/dotnet-discord]
+如果您有反馈、问题或建议，欢迎通过以下方式联系我们：  
 
-Or file a new bug-report or feature request in the https://github.com/AvaloniaUI/Avalonia.Samples/issues[`Issues`]-section.
+image:https://raw.githubusercontent.com/Patrolavia/telegram-badge/master/chat.svg[link=https://t.me/Avalonia]  
+image:https://badges.gitter.im/Join%20Chat.svg[link=https://gitter.im/AvaloniaUI/Avalonia?utm_campaign=pr-badge&utm_content=badge&utm_medium=badge&utm_source=badge]  
+image:https://img.shields.io/badge/discord-join%20chat-46BC99[link=https://aka.ms/dotnet-discord]  
 
+您也可以在 https://github.com/AvaloniaUI/Avalonia.Samples/issues[`Issues`] 页面提交新的错误报告或功能请求。  
 
-[#_organization_of_the_samples]
-== 📂 Organization of the Samples
+[#_organization_of_the_samples]  
+== 📂 示例组织结构  
 
-Every sample can be found in its own sub-folder and can run without any reference to another sample. Nevertheless we have a `*.sln`-file which has all projects in one solution, if you are looking for a complete collection of samples.
+每个示例均位于独立的子文件夹中，无需依赖其他示例即可运行。此外，我们提供了一个包含所有项目的 `*.sln` 解决方案文件，方便您一站式查看所有示例。  
 
-You can find the list of samples <<samples,below>>. The samples are structured in different categories and difficulties. For better search results, each sample is also tagged with some **buzz-words**.
+示例列表请见 <<samples,下方>>。示例按类别和难度分类，并标注了**关键词**以方便搜索。  
 
-In every sample folder you will find a `README`-file, which describes the sample in detail and, if applicable, has links to further information and documentation.
+每个示例文件夹中均包含一个 `README` 文件，详细说明示例内容，并提供相关文档链接。  
 
+[#_difficulties]  
+=== 🐣 难度等级  
 
-[#_difficulties]
-=== 🐣 Difficulties
+每个示例均标注了难度等级，用于说明用户需要具备的基础知识水平。  
 
-Each sample is tagged with its difficulty. The degree of difficulty describes how much base-knowledge a user should have.
+[cols="1,1,2"]  
+|===  
+| 🔘 | 难度 | 所需知识  
 
+| 🐣 | 初学  
+| 无需 Avalonia 基础，但需掌握 `C#`、`X(A)ML` 及 IDE 的基本使用。  
 
-[cols="1,1,2"]
-|===
-| 🔘 | Difficulty  | Degree of knowledge
+| 🐥 | 简单  
+| 需了解 Avalonia 的基础知识。  
 
-| 🐣 | Beginner
-| A Beginner must not have any knowledge of Avalonia. Nevertheless some basic knowledge of `C#`, `X(A)ML` and  your IDE is mandatory.
+| 🐔 | 普通  
+| 需具备一定的 Avalonia 使用经验。  
 
-| 🐥 | Easy
-| Some very basic knowledge of Avalonia is needed.
+| 🐉 | 困难  
+| 专注于非标准任务，适用于高级用户。  
 
-| 🐔 | Normal
-| The user is somewhat experienced with Avalonia.
+|===  
 
-| 🐉 | Hard
-| These samples are focusing on non-standard tasks, which most users will not need to know.
+[#samples]  
+== ✍️ 示例列表  
 
-|===
+////  
+以下为新示例的模板，请替换 << >> 中的内容。  
 
+| link:src/Avalonia.Samples/<<章节>>/<<子文件夹>>[<<标题>>]  
+| <<难度>>  
+| <<关键词>>  
+////  
 
-[#samples]
-== ✍️ Samples
+[#_mvvm_samples]  
+=== 💡 MVVM 示例  
 
-////
- Copy the below for a new entry in the sample-tables and replace the text in << >> with your content.
+[cols="25h,25,50"]  
+|===  
+| 示例 | 难度 | 关键词  
 
-| link:src/Avalonia.Samples/<<The_Chapter>>/<<TheSubFolder>>[<<Your Title>>]
-| <<The difficulty>>
-| <<The buzz-words>>
-////
+| link:src/Avalonia.Samples/MVVM/BasicMvvmSample[基础 MVVM 示例]  
+| 🐣 初学  
+| MVVM、Model-View-ViewModel、ReactiveUI、INotifyPropertyChanged、XAML、数据绑定  
 
+| link:src/Avalonia.Samples/MVVM/CommandSample[命令示例]  
+| 🐣 初学  
+| Command、ICommand、CommandParameter、MVVM、ReactiveCommand、async-await  
 
-[#_mvvm_samples]
-=== 💡 MVVM-Samples
+| link:src/Avalonia.Samples/MVVM/ValueConversionSample[值转换器示例]  
+| 🐥 简单  
+| Converter、Binding、MultiBinding、IValueConverter、IMultiValueConverter、MVVM、FuncValueConverter  
 
-[cols="25h,25,50"]
-|===
-| Sample | Difficulty | Buzz-Words
+| link:src/Avalonia.Samples/MVVM/ValidationSample[数据验证示例]  
+| 🐥 简单  
+| MVVM、数据验证、异常处理、错误消息、数据绑定  
 
-| link:src/Avalonia.Samples/MVVM/BasicMvvmSample[Basic MVVM Sample]
-| 🐣 Beginner
-| MVVM, Model-View-ViewModel, ReactiveUI, INotifyPropertyChanged, XAML, Binding
+|===  
 
-| link:src/Avalonia.Samples/MVVM/CommandSample[Commands Sample]
-| 🐣 Beginner
-| Command, ICommand, CommandParameter, MVVM, ReactiveCommand, async-await
+[#_drawing_samples]  
+=== ✒️ 绘图示例  
 
-| link:src/Avalonia.Samples/MVVM/ValueConversionSample[ValueConverter Sample]
-| 🐥 Easy
-| Converter, Binding, MultiBinding, IValueConverter, IMultiValueConverter, MVVM, FuncValueConverter
+[cols="25h,25,50"]  
+|===  
+| 示例 | 难度 | 关键词  
 
-| link:src/Avalonia.Samples/MVVM/ValidationSample[Validation Sample]
-| 🐥 Easy
-| MVVM, Data-Validation, Exception, Error, Error-Message, Binding
+| link:src/Avalonia.Samples/Drawing/BattleCity[BattleCity 游戏示例]  
+| 🐔 普通  
+| 游戏、Canvas、游戏循环、MVVM  
 
-|===
+| link:src/Avalonia.Samples/Drawing/RectPainter[矩形绘制示例]  
+| 🐔 普通  
+| 图形绘制、MVVM  
 
+|===  
 
+[#_datatemplate_samples]  
+=== 🎞️ 数据模板示例  
 
-[#_drawing_samples]
-=== ✒️ Drawing-Samples
+[cols="25h,25,50"]  
+|===  
+| 示例 | 难度 | 关键词  
 
-[cols="25h,25,50"]
-|===
-| Sample | Difficulty | Buzz-Words
+| link:src/Avalonia.Samples/DataTemplates/BasicDataTemplateSample[基础数据模板示例]  
+| 🐔 普通  
+| DataTemplate、ToString、StringFormat、MVVM、ItemTemplate、ContentTemplate  
 
-| link:src/Avalonia.Samples/Drawing/BattleCity[BattleCity Game Sample]
-| 🐔 Normal
-| Game, Canvas, Game Loop, MVVM
+| link:src/Avalonia.Samples/DataTemplates/FuncDataTemplateSample[FuncDataTemplate 示例]  
+| 🐔 普通  
+| FuncDataTemplate、DataTemplate、C#、代码绑定  
 
-| link:src/Avalonia.Samples/Drawing/RectPainter[Rect Painter Sample]
-| 🐔 Normal
-| Graphics, MVVM
+| link:src/Avalonia.Samples/DataTemplates/IDataTemplateSample[IDataTemplate 实现示例]  
+| 🐔 普通  
+| IDataTemplate、DataTemplate、DataTemplateSelector  
 
-|===
+|===  
 
-[#_datatemplate_samples]
-=== 🎞️ DataTemplate-Samples
+[#_routing_navigation_samples]  
+=== 🗺️ 路由与导航示例  
 
-[cols="25h,25,50"]
-|===
-| Sample | Difficulty | Buzz-Words
+[cols="25h,25,50"]  
+|===  
+| 示例 | 难度 | 关键词  
 
-| link:src/Avalonia.Samples/DataTemplates/BasicDataTemplateSample[Basic DataTemplate Sample]
-| 🐔 Normal
-| DataTemplate, ToString, StringFormat, MVVM, ItemTemplate, ContentTemplate
+| link:src/Avalonia.Samples/Routing/BasicViewLocatorSample[基础视图定位器示例]  
+| 🐔 普通  
+| ViewLocator、路由、向导、导航、页面、MVVM  
 
-| link:src/Avalonia.Samples/DataTemplates/FuncDataTemplateSample[FuncDataTemplate Sample]
-| 🐔 Normal
-| FuncDataTemplate, DataTemplate, C#, Binding from code
+|===  
 
-| link:src/Avalonia.Samples/DataTemplates/IDataTemplateSample[Implementing IDataTemplate Sample]
-| 🐔 Normal
-| IDataTemplate, DataTemplate, DataTemplateSelector
+[#_custom_controls_samples]  
+=== 🛠️ 自定义控件示例  
 
-|===
+[cols="25h,25,50"]  
+|===  
+| 示例 | 难度 | 关键词  
 
+| link:src/Avalonia.Samples/CustomControls/RatingControlSample[评分控件示例]  
+| 🐔 普通  
+| 控件、模板化控件、自定义控件、可复用控件、AvaloniaProperty、StyledProperty、DirectProperty、ReadonlyProperty、样式、ControlTheme  
 
-[#_routing_navigation_samples]
-=== 🗺️ Routing / Navigation-Samples
+| link:src/Avalonia.Samples/CustomControls/SnowflakesControlSample[雪花控件示例]  
+| 🐔 普通  
+| 自定义控件、渲染、点击测试、自定义动画  
 
-[cols="25h,25,50"]
-|===
-| Sample | Difficulty | Buzz-Words
+|===  
 
-| link:src/Avalonia.Samples/Routing/BasicViewLocatorSample[Basic ViewLocator Sample]
-| 🐔 Normal
-| ViewLocator, Routing, Wizard, Navigation, Page, MVVM
+[#_view_interaction_samples]  
+=== ⚡ 视图交互示例  
 
-|===
+[cols="25h,25,50"]  
+|===  
+| 示例 | 难度 | 关键词  
 
+| link:src/Avalonia.Samples/ViewInteraction/MvvmDialogSample[MVVM 对话框示例]  
+| 🐔 普通  
+| MVVM、对话框、文件对话框、TopLevel、剪贴板  
 
-[#_custom_controls_samples]
-=== 🛠️ Custom Controls Samples
+| link:src/Avalonia.Samples/ViewInteraction/DialogManagerSample[对话框管理器示例]  
+| 🐔 普通  
+| MVVM、对话框、文件对话框、TopLevel、剪贴板、DialogManager、CommunityToolkit.Mvvm  
 
-[cols="25h,25,50"]
-|===
-| Sample | Difficulty | Buzz-Words
+|===  
 
-| link:src/Avalonia.Samples/CustomControls/RatingControlSample[RatingControl Sample]
-| 🐔 Normal
-| Control, TemplatedControl, custom Control, reusable Control, AvaloniaProperty, StyledProperty, DirectProperty, ReadonlyProperty, Style, ControlTheme
+[#_automated_ui_testing]  
+=== 🧪️ 自动化 UI 测试示例  
 
-| link:src/Avalonia.Samples/CustomControls/SnowflakesControlSample[SnowflakesControl Sample]
-| 🐔 Normal
-| Custom Control, Render, Hit-Testing, Custom Animations
+[cols="25h,25,50"]  
+|===  
+| 示例 | 难度 | 关键词  
 
-|===
+| link:src/Avalonia.Samples/Testing/TestableApp.Headless.XUnit[使用 Headless XUnit 测试]  
+| 🐔 普通  
+| XUnit、无头模式、自动化、UI 测试  
 
+| link:src/Avalonia.Samples/Testing/TestableApp.Headless.NUnit[使用 Headless NUnit 测试]  
+| 🐔 普通  
+| NUnit、无头模式、自动化、UI 测试  
 
-[#_view_interaction_samples]
-=== ⚡ View Interaction Samples
+| link:src/Avalonia.Samples/Testing/TestableApp.Appium[使用 Appium 测试]  
+| 🐉 困难  
+| XUnit、Appium、WinAppDriver、自动化、UI 测试  
 
-[cols="25h,25,50"]
-|===
-| Sample | Difficulty | Buzz-Words
+|===  
 
-| link:src/Avalonia.Samples/ViewInteraction/MvvmDialogSample[Mvvm Dialog Sample]
-| 🐔 Normal
-| MVVM, Dialog, FileDialogs, TopLevel, Clipboard
+[#_complete_apps]  
+[complete-apps]  
+=== 🧑‍💻 完整应用示例  
 
-| link:src/Avalonia.Samples/ViewInteraction/DialogManagerSample[Dialog Manager Sample]
-| 🐔 Normal
-| MVVM, Dialog, FileDialogs, TopLevel, Clipboard, DialogManager, CommunityToolkit.Mvvm
+[cols="25h,25,50"]  
+|===  
+| 示例 | 难度 | 关键词  
 
-|===
+| link:src/Avalonia.Samples/CompleteApps/SimpleToDoList[简易待办清单]  
+| 🐥 简单  
+| 待办清单、完整应用、MVVM、CommunityToolkit.MVVM、源码生成器、样式、命令  
 
-[#_automated_ui_testing]
-=== 🧪️ Automated UI Testing
+|===  
 
-[cols="25h,25,50"]
-|===
-| Sample | Difficulty | Buzz-Words
+[#_contribution]  
+== 🪛 贡献指南  
 
-| link:src/Avalonia.Samples/Testing/TestableApp.Headless.XUnit[Testing with Headless XUnit]
-| 🐔 Normal
-| XUnit, Headless, Automation, UI Testing
-| link:src/Avalonia.Samples/Testing/TestableApp.Headless.NUnit[Testing with Headless NUnit]
-| 🐔 Normal
-| NUnit, Headless, Automation, UI Testing
-| link:src/Avalonia.Samples/Testing/TestableApp.Appium[Testing with Appium]
-| 🐉 Hard
-| XUnit, Appium, WinAppDriver, Automation, UI Testing
+缺少某个示例？发现了错误？有改进建议？或有新想法？  
 
-|===
+欢迎贡献您的力量！  
 
-[#_complete_apps]
-[complete-apps]
-=== 🧑‍💻 Complete Apps
-[cols="25h,25,50"]
-|===
-| Sample | Difficulty | Buzz-Words
+注意：请先阅读《行为准则》。  
 
-| link:src/Avalonia.Samples/CompleteApps/SimpleToDoList[Simple ToDo-List]
-| 🐥 Easy
-| ToDo-List, Complete App, MVVM, CommunityToolkit.MVVM, Source Generator, Styles, Commands
+=== 行为准则  
+本项目遵循 .NET 基金会的 https://dotnetfoundation.org/code-of-conduct[《贡献者公约》]，以明确社区行为规范。  
 
-|===
+[#_issues_and_feature_requests]  
+=== 提交问题与功能请求  
+提交新问题或功能请求时，请使用模板。若发现现有示例的问题，请注明示例路径并提供具体描述。  
 
+[#_pull_requests]  
+=== 提交 Pull Request  
 
-[#_contribution]
-== 🪛 Contribution
+注意：提交的 PR 可能会被讨论，且不一定全部合并。如有疑问，请先<<get-in-touch,联系我们>>。  
 
-Is anything missing? Have you found an error? Have you found an outdated sample? Or do you have a great idea?
+[#_fixing_an_existing_sample]  
+==== 修复现有示例  
+若发现示例内容不清晰或缺失，可修改后提交 PR。拼写错误或表述问题也可通过 PR 修正。  
 
-Fantastic! Your contribution is welcome.
+重要：若修改难度或关键词，请同步更新主页面。  
 
-NOTE: Before you start, make sure you have read the Code of Conduct.
+[#_adding_a_new_sample]  
+==== 添加新示例  
 
-=== Code of Conduct
-This project has adopted the code of conduct defined by the Contributor Covenant to clarify expected behavior in our community. For more information see the https://dotnetfoundation.org/code-of-conduct[Contributor Covenant Code of Conduct].
+1. 将新项目添加到解决方案：`src ► Avalonia.Samples ► Avalonia.Samples.sln`  
+2. 在示例根目录添加 `README` 文件。建议使用以下模板：  
+   - link:/_docs/AsciiDoc-Template/[AsciiDoc 模板]：支持富文本内容。  
+   - link:/_docs/Markdown-Template/[Markdown 模板]：若不使用 AsciiDoc，可选择此模板。  
 
-[#_issues_and_feature_requests]
-=== Issues and Feature Requests
-If you file a new issue or feature request, please fill in the templates available. If you found an issue in an existing sample, please link the sample and, if possible, point us to what is wrong.
+////  
+=== 🎃 Hacktoberfest 2023  
+我们参与 https://hacktoberfest.com[[Hacktoberfest 2023\]]。本月提交有效 PR 将标记为 `HACKTOBERFEST-ACCEPTED`。详情请见 https://hacktoberfest.com/participation/[[参与指南]]。  
 
-[#_pull_requests]
-=== Pull Requests
+有效 PR 包括：  
+- 添加新示例  
+- 修复现有示例  
+- 改进现有示例  
+- 全局拼写检查（非随机修改单词）  
 
-NOTE: Pull requests may be discussed and probably not every pull request will be merged in the end. If you are not sure, please <<get-in-touch>> first. Anyway, every contribution is welcome.
+警告：垃圾或无效 PR 将被标记为无效。如有疑问，可通过 Telegram image:https://raw.githubusercontent.com/Patrolavia/telegram-badge/master/chat.svg[link=https://t.me/Avalonia] 咨询。  
 
-[#_fixing_an_existing_sample]
-==== Fixing an existing sample
-
-If you find that in an existing sample, that something is unclear or missing, you can update the sample and file a pull request. Spelling mistakes or wrong wording can also be changed in a pull request.
-
-IMPORTANT: If you change the difficulty or the buzz-words, remember to also update the main page.
-
-[#_adding_a_new_sample]
-==== Adding a new sample
-
-. Add a new Project to the Solution: `src ► Avalonia.Samples ► Avalonia.Samples.sln`
-. In the root directory of the new sample add a `README`-file. We highly suggest using a template which you can find here:
-.. link:/_docs/AsciiDoc-Template/[AsciiDoc-Template]: If you want to provide richer content, we suggest using the https://asciidoc.org[ascii-doc]-template.
-.. link:/_docs/Markdown-Template/[Markdown-Template]: If you prefer not to use AsciiDoc, you can instead use the Markdown-template.
-
-// Comment this in for next year's Hacktoberfest
-//// 
-=== 🎃 Hacktoberfest 2023
-
-We are participating in https://hacktoberfest.com[[Hacktoberfest 2023\]]. If you submit a valid pull request within this month, we will add the `HACKTOBERFEST-ACCEPTED` label to your PR. Read more about it and how to participate https://hacktoberfest.com/participation/[[here\]].
-
-Valid PRs are::
-- Adding a new sample
-- Fixing an existing sample
-- Improving an existing sample
-- Doing an overall spell-check (Not just changing a random word!)
-
-WARNING: Spam or invalid PRs will be marked as invalid. If you are unsure if your PR will be accepted for Hacktoberfest, you can ask us here or in the image:https://raw.githubusercontent.com/Patrolavia/telegram-badge/master/chat.svg[link=https://t.me/Avalonia]. 
-
-🎃 Happy coding 🎃
-////
+🎃 编码愉快 🎃  
+////  
